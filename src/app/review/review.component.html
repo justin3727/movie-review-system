@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container">
+<div>
+  <h1>Write a Review for {{ movieTitle }}</h1>
+  <img [src]="movieImage" alt="{{ movieTitle }}" width="200">
+
+  <div class="movie-review">
+
+    <div class="rating">
+      <span class="star" *ngFor="let star of stars" (click)="rateMovie(star)"
+        [ngClass]="getStarClass(star)">&#9733;</span>
+    </div>
+    <div class="comment">
+      <input type="text" [(ngModel)]="reviewHeading" name="reviewHeading" placeholder="Add Heading">
+      <br>
+      <textarea [(ngModel)]="userComment" name="userComment" placeholder="Add your review"></textarea>
+      <br>
+      <button (click)="submitReview()">Submit Review</button>
+    </div>
+    
+  </div>
+
+
+
+
+  <div *ngFor="let review of reviews" class="review-card">
+    <div class="rating">Rating: {{ review.rating }}</div>
+    <h2>{{ review.heading }}</h2>
+    <p>{{ review.description }}</p>
+  </div>
+
+</div>
+</div>

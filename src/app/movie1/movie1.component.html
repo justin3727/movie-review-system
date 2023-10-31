@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+
+<div class="back">
+<div class="test">
+  
+  <ul>
+    <li *ngFor="let movieItem of getDisplayedMovies()">
+      <a [routerLink]="['/review', movieItem.title, movieItem.image]">
+        <img [src]="movieItem.image" alt="{{ movieItem.title }}" width="100">
+        <p>{{ movieItem.title }}</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <div class="pagination">
+    <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }}</span>
+    <button (click)="changePage(currentPage + 1)" [disabled]="currentPage * moviesPerPage >= movie.length">Next</button>
+  </div>
+</div>
+</div>

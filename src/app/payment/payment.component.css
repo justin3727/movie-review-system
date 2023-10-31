@@ -1,0 +1,106 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 110vw;
+    min-height: 110vh;
+    background: linear-gradient(135deg, #4e59a1, #0902e2);
+    background:  url('../../assets/images/wall14.jpg') no-repeat center center; 
+    background-size:auto; 
+}
+
+#payment-component {
+    /* background-image: url('../../assets/images/wall5.jpg'); */
+
+    max-width: 300px;
+    background-color: #ccc;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    height: 300%;
+
+    margin-top: 8%;
+    
+    
+
+}
+
+
+ 
+
+h2 {
+
+    font-size: 1.2em;
+
+    margin-bottom: 20px;
+    color:rgb(11, 10, 10);
+
+}
+a{
+    color: #cf2828;
+}
+
+ 
+
+button {
+
+    margin-bottom: 10px;
+
+    padding: 10px 20px;
+
+    width: 100%; 
+
+    font-size: 1em;
+
+    border: 1px solid #4caf50;
+
+    border-radius: 5px;
+
+    background-color: #4caf50;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+ 
+
+button:hover {
+
+    background-color: lightgreen;
+
+    border-color: lightgreen;
+
+}
+
+ 
+
+button:focus {
+
+    outline: none;
+
+}
+
+ 
+
+button:last-child {
+
+    margin-bottom: 0;
+
+}
+
+ 

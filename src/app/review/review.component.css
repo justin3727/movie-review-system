@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 110vw;
+    min-height: 110vh;
+    background: linear-gradient(135deg, #4e59a1, #0902e2);
+    background:  url('../../assets/images/wall6.jpg') ; 
+    background-size:auto; 
+    text-align: center;
+}
+
+h1{
+  color: whitesmoke;
+}
+
+
+
+h2 {
+  
+  font-size: 36px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 270px;
+  height: 400px;
+  /* max-width: 100%;
+  height: auto; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+textarea {
+  width: 50%;
+  height: 35px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 60px 10px 85px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 300px;
+ 
+  
+}
+
+.review-card .rating {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+
+.review-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.rating {
+  font-size: 24px;
+  margin: 20px 0;
+  background-color: #ccc;
+}
+
+.star {
+  background-color: #333;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.comment input[type=text]{
+  width: 100%;
+  height: 35px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;}
+
+.comment textarea {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.comment button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review {
+  margin-top: 20px;
+  margin: 10px 20px 10px 10px;
+}
+
+.review p {
+  margin: 5px 0;
+}
+.star {
+  cursor: pointer;
+  margin: 0 5px;
+  color: #ccc; 
+}
+
+
+.star.selected {
+  color: #f7b733; 
+}

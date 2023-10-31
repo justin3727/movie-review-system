@@ -1,0 +1,79 @@
+.container1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../../assets/images/wall6.jpg')  ;
+  background-size:cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #f1e9e9;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #f5efef;
+}
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    /* Background color for input fields */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+div[ngIf="welcomeMessage"] {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    bottom: 0;
+}
+.welcome-message {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<div class="container1">
+    <form (submit)="onSubmit()">
+        
+        <h2>Registration Form</h2>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" [(ngModel)]="user.mobile" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" [(ngModel)]="user.dob" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    
+    <div class="welcome-message" *ngIf="welcomeMessage">{{ welcomeMessage }}</div>
+</div>

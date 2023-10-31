@@ -1,0 +1,80 @@
+{
+    "reviews": [
+      {
+        "heading": "Excellent Movie",
+        "rating": 5,
+        "description": "This movie is fantastic, a must-watch!"
+      },
+      {
+        "heading": "Great Film",
+        "rating": 4,
+        "description": "Enjoyed every moment of it."
+      },
+      {
+        "heading": "Good Movie",
+        "rating": 3,
+        "description": "Not bad, worth watching."
+      },
+      {
+        "heading": "Okay Film",
+        "rating": 2,
+        "description": "It's just okay, nothing special."
+      },
+      {
+        "heading": "Terrible Movie",
+        "rating": 1,
+        "description": "I wouldn't recommend this to anyone."
+      },
+      {
+        "heading": "Masterpiece",
+        "rating": 5,
+        "description": "A true masterpiece. I was captivated from start to finish."
+      },
+      {
+        "heading": "Solid Entertainment",
+        "rating": 4,
+        "description": "I had a great time watching this movie."
+      },
+      {
+        "heading": "Mediocre Film",
+        "rating": 3,
+        "description": "It's just average, not particularly impressive."
+      },
+      {
+        "heading": "Disappointing",
+        "rating": 2,
+        "description": "I expected more, but it fell short of my expectations."
+      },
+      {
+        "heading": "Waste of Time",
+        "rating": 1,
+        "description": "I regret watching this movie. It's a complete waste of time."
+      },
+      {
+        "heading": "Top-Notch",
+        "rating": 5,
+        "description": "One of the best movies I've seen in a long time."
+      },
+      {
+        "heading": "Entertaining",
+        "rating": 4,
+        "description": "I was thoroughly entertained by this film."
+      },
+      {
+        "heading": "Decent Flick",
+        "rating": 3,
+        "description": "It's decent, but not outstanding."
+      },
+      {
+        "heading": "Subpar Movie",
+        "rating": 2,
+        "description": "I expected better. It's below average."
+      },
+      {
+        "heading": "Horrific Film",
+        "rating": 1,
+        "description": "This movie was a horror show, and not in a good way."
+      }
+    ]
+  }
+  

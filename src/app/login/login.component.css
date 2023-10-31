@@ -1,0 +1,143 @@
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 110vw;
+    min-height: 110vh;
+    background: linear-gradient(135deg, #4e59a1, #0902e2);
+    background:  url('../../assets/images/wall6.jpg') no-repeat center center; 
+    background-size:auto; /* Ensures the image covers the entire container */
+    text-align: center;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+  
+  /* Style the film image */
+  .film {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  /* Style the logo */
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Elephant', cursive;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color:#e5e4ef;
+    background: #131212;
+  }
+  
+  /* Style the description */
+  .desc {
+    font-size: 18px;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 2px;
+    max-width: 800px;
+    margin-bottom: 20px;
+    color: #1d1998;
+    background: #ccc;
+  }
+  
+  /* Style the login-form */
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  /* Style form group elements */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Style form labels */
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  /* Style form inputs */
+  .form-control {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the login button */
+  .btn-container .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add hover effect to the button */
+  .btn-container .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Style the error message */
+  .error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .register{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 40px;
+    cursor: pointer;
+    color: blue;
+    background-color: #ccc;
+    right: -5%;
+    top: 0%;
+  }
+
+  .navbar {
+    background-color: #333; /* Background color of the navigation bar */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: right; /* Align items to the left and right */
+    padding: 10px; /* Add padding for better spacing */
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-list-right {
+    justify-content: flex-end; /* Align items to the right within this list */
+  }
+  
+  .navbar-item {
+    margin-right: 20px; /* Add some spacing between items */
+  }
+  
+  .navbar-item:last-child {
+    margin-right: 0; /* Remove margin from the last item to prevent extra space */
+  }
+  
+  .navbar-item a {
+    color: #fff; /* Text color of the links */
+    text-decoration: none; /* Remove underlines from links */
+  }
+  .test{
+    background-color: #131212;
+  }
+  

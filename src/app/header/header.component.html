@@ -1,0 +1,16 @@
+<div class="header-container">
+  <div class="test">
+    <div class="logo" (click)="logout()">JK REVIEWS</div>
+    <div class="home" (click)="home()">Home</div>
+  </div>
+
+  <div class="inline">
+    <form (submit)="search()">
+      <input type="text" [(ngModel)]="searchQuery" placeholder="Search for movies">
+      <button type="submit">Search</button>
+    </form>
+
+    <button class="payment-button" (click)="makePayment()">Subscription</button>
+    <div class="logout" (click)="logout()">Logout</div>
+  </div>
+</div>
