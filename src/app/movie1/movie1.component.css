@@ -14,6 +14,9 @@
   background-size:contain;
 
 }
+p{
+  background-color: #111010;
+}
 
 h2 {
   text-align: center;

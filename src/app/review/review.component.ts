@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ReviewServiceService } from '../services/review-service.service';
 import { AuthService } from '../services/auth.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-review',
@@ -11,18 +12,22 @@ import { AuthService } from '../services/auth.service';
 export class ReviewComponent implements OnInit {
   movieTitle: string | null = null;
   movieImage: string | null = null;
+  movieVideoLink: SafeResourceUrl | null = null;
   reviews: any[] = [];
 
   constructor(
     private route: ActivatedRoute,
     private reviewService: ReviewServiceService,
     private router:Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private sanitizer: DomSanitizer
   ) {
     this.route.paramMap.subscribe(params => {
       this.movieTitle = params.get('title');
       this.movieImage = params.get('image');
+      this.movieVideoLink = this.sanitizer.bypassSecurityTrustResourceUrl(params.get('videoLink') || '');
     });
+    console.log(this.movieVideoLink, this.movieTitle, this.movieImage)
   }
 
   ngOnInit(): void {

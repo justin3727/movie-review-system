@@ -27,7 +27,7 @@ const routes: Routes = [
   {path:'debitcard', component:DebitcardComponent},
   {path:'creditcard', component:CreditcardComponent},
   {path:'cod',component:CodComponent},
-  { path: 'review/:title/:image', component: ReviewComponent },
+  { path: 'review/:title/:image/:videoLink', component: ReviewComponent },
   {path:'payment',component:PaymentComponent},
   {path:'addmovie', component:AddmovieComponent},
   {path:'forgot-password', component:ForgotPasswordComponent},

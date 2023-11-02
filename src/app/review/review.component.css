@@ -6,7 +6,7 @@
     max-width: 110vw;
     min-height: 110vh;
     background: linear-gradient(135deg, #4e59a1, #0902e2);
-    background:  url('../../assets/images/wall6.jpg') ; 
+     background:  url('../../assets/images/wall6.jpg') ;  
     background-size:auto; 
     text-align: center;
 }
@@ -69,7 +69,7 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px 60px 10px 85px;
+  margin: 10px 60px 10px 120px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   max-width: 300px;

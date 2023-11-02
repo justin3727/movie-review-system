@@ -87,4 +87,10 @@
     font-size: 16px;
     margin: 0 10px; /* Add spacing between the text and buttons */
   }
-  
+  .video-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 400px; /* Set the desired height for the video container */
+    background-color: #161515; /* Add a background color for visibility */
+}

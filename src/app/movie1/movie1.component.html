@@ -6,7 +6,7 @@
   
   <ul>
     <li *ngFor="let movieItem of getDisplayedMovies()">
-      <a [routerLink]="['/review', movieItem.title, movieItem.image]">
+      <a [routerLink]="['/review', movieItem.title, movieItem.image, movieItem.videoLink]">
         <img [src]="movieItem.image" alt="{{ movieItem.title }}" width="100">
         <p>{{ movieItem.title }}</p>
       </a>
