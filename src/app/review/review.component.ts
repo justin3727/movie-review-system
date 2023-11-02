@@ -46,22 +46,7 @@ export class ReviewComponent implements OnInit {
     this.reviews.unshift({ heading: this.reviewHeading, rating: this.selectedStars, description: this.userComment, })
     console.log(this.selectedStars);
 
-    // if (this.authService.isUserAuthenticated()) {
-    //   // User is authenticated, add the review
-    //   this.reviews.unshift({
-    //     heading: this.reviewHeading,
-    //     rating: this.selectedStars,
-    //     description: this.userComment,
-    //   });
-    //   console.log(this.selectedStars);
-    // } else {
-    //   // User is not authenticated, navigate to the login component
-    //   this.router.navigate(['login']);
-    // }
-
-  
-
-  }
+    }
 
   getStarClass(index: number): string {
     return index <= this.selectedStars ? 'selected' : '';

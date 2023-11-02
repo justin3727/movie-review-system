@@ -1,9 +1,9 @@
 .test {
   /* background-color: rgba(255, 255, 255, 0.8);  */
   padding: 20px;
-  border-radius: 10px; /* Rounded corners for the movie list */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle lift effect */
-  max-width: 800px; /* Adjust this to your desired width */
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 20px;
   
@@ -40,15 +40,15 @@ a {
 }
 
 a:hover {
-  transform: scale(1.05); /* Enlarge the image slightly on hover */
+  transform: scale(1.05);
 }
 
 img {
   width: 200px;
-  height: 400px; /* Set a fixed size for the images */
+  height: 400px; 
   object-fit: cover;
-  border: 1px solid #ddd; /* Add a border to separate the image boxes */
-  border-radius: 5px; /* Rounded corners for image boxes */
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
   display: flexbox;
 }
 body {
@@ -63,23 +63,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Add margin as needed */
+  margin-top: 20px;
   
 }
 
 .pagination button {
   padding: 5px 10px;
-  background-color: #007bff; /* Set your desired button background color */
-  color: #fff; /* Set your desired button text color */
+  background-color: #007bff; 
+  color: #fff; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 5px; /* Add spacing between the buttons */
+  margin: 0 5px;
 }
-
 .pagination span {
   font-weight: bold;
   color: #111010;
   font-size: 16px;
-  margin: 0 10px; /* Add spacing between the text and buttons */
+  margin: 0 10px; 
 }

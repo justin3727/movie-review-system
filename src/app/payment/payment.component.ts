@@ -20,32 +20,28 @@ export class PaymentComponent implements OnInit, OnDestroy {
   selectedPaymentMethod: string = '';
   timerValue: number = 10;
   timerInterval: any;
-  
-  
   inactivityTimerSubscription: Subscription | undefined;
 
- 
-
-  
-  constructor(private router:Router, private inactivityService: InactivityService){
+  constructor(private router: Router, private inactivityService: InactivityService) {
     this.selectedPaymentMethod = '';
   }
 
   ngOnInit(): void {
+    this.startTimer(); // Start the timer when the component is initialized.
     
     this.inactivityTimerSubscription = this.inactivityService
       .startTrackingInactivity()
       .subscribe(() => {
-        
-        this.router.navigate(['/login']); 
+        this.router.navigate(['/login']);
       });
   }
 
   ngOnDestroy(): void {
-    
     if (this.inactivityTimerSubscription) {
       this.inactivityTimerSubscription.unsubscribe();
     }
+    
+    this.resetTimer(); // Clear the timer when leaving the component.
   }
 
   @HostListener('document:mousemove', ['$event'])
@@ -54,18 +50,18 @@ export class PaymentComponent implements OnInit, OnDestroy {
     this.resetTimer();
     this.startTimer();
   }
+
   resetTimer() {
     clearInterval(this.timerInterval);
     this.timerValue = 10;
   }
 
-
   startTimer() {
     this.timerInterval = setInterval(() => {
       if (this.timerValue > 0) {
         this.timerValue--;
-        if(this.timerValue==4){
-          alert('timing out')
+        if (this.timerValue == 4) {
+          alert('timing out');
         }
       } else {
         clearInterval(this.timerInterval);
@@ -74,16 +70,11 @@ export class PaymentComponent implements OnInit, OnDestroy {
     }, 1000);
   }
 
-
-
-
-
-
   handlePayment(paymentMethod: string): void {
 
     this.selectedPaymentMethod = paymentMethod;
 
-   
+
 
     switch (paymentMethod) {
 
@@ -105,60 +96,59 @@ export class PaymentComponent implements OnInit, OnDestroy {
 
         break;
 
-        case 'cash':
+      case 'cash':
 
-          this.processCashOnDelivery();
+        this.processCashOnDelivery();
 
-          break;
+        break;
 
-        default:
+      default:
 
-          console.log('Invalid payment method selected.');
+        console.log('Invalid payment method selected.');
 
-          break;
-
-      }
+        break;
 
     }
 
- 
-
-    processCreditCardPayment(): void {
-
-     
-
-     this.router.navigate(['/creditcard']);
-
-      }
-
- 
-
-    processDebitCardPayment(): void {
-
-     
-
-      this.router.navigate(['/debitcard']);
-
-    }
-
- 
-
-    processPaypalPayment(): void {
-
-      this.router.navigate(['/paypal']);
-
-    }
-
- 
-
-    processCashOnDelivery(): void {
-
-      this.router.navigate(['/cod']);
-
-    }
+  }
 
 
 
-  }  
+  processCreditCardPayment(): void {
 
- 
+
+
+    this.router.navigate(['/creditcard']);
+
+  }
+
+
+
+  processDebitCardPayment(): void {
+
+
+
+    this.router.navigate(['/debitcard']);
+
+  }
+
+
+
+  processPaypalPayment(): void {
+
+    this.router.navigate(['/paypal']);
+
+  }
+
+
+
+  processCashOnDelivery(): void {
+
+    this.router.navigate(['/cod']);
+
+  }
+
+
+
+}
+
