@@ -18,6 +18,7 @@ export class PaymentComponent implements OnInit, OnDestroy {
 
   @Input() routelink: string = '/payment';
   selectedPaymentMethod: string = '';
+  text:number=5.5;
   timerValue: number = 10;
   timerInterval: any;
   inactivityTimerSubscription: Subscription | undefined;
