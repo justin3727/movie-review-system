@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -23,6 +23,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { List2Component } from './list2/list2.component';
 import { Movie3Component } from './movie3/movie3.component';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { Movie3Component } from './movie3/movie3.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
     // FeatureModule
   ],
   providers: [],
